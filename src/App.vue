@@ -26,7 +26,7 @@
 }
 
 nav {
-  background-color: teal;
+  background-color: #330000;
   color: white;
   padding: 10px 20px;
   position: fixed;
@@ -47,7 +47,7 @@ nav ul {
 }
 
 nav a {
-  color: antiquewhite;
+  color: #A43820;
   font-size: 1.5rem;
   text-decoration: none;
   font-weight: bold;

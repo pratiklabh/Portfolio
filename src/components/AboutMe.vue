@@ -18,7 +18,7 @@
 <style scoped>
 .about-me {
   margin-top: 75px;
-  background-color: teal;
+  background-color: #330000;
   border-radius: 20px;
   padding: 20px;
   display: flex;
@@ -31,30 +31,34 @@
 }
 
 .profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   margin-right: 30px;
   border: 4px solid #fff;
 }
 
 .about-text {
+  font-family: 'Playfair Display', serif;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 4.5rem;
+  letter-spacing: 2px;
+
   margin: 0;
-  color: antiquewhite;
+  color: #A43820;
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-top: 10px;
   line-height: 1.6;
-  color: antiquewhite;
+  color: #D09683;
 
 }
 </style>

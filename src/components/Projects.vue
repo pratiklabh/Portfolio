@@ -80,10 +80,11 @@ const projects = ref([
 
 <style scoped>
 .projects {
-  background-color: teal;
+  background-color: #330000;
   margin-bottom: 40px;
-  margin-top: 75px;
+  margin-top: 50px;
   text-align: center;
+  font-family: 'Playfair Display', serif;
   padding-bottom: 30px;
   border-radius: 20px;
   padding-top: 10px;
@@ -98,7 +99,7 @@ const projects = ref([
 
 .project-card {
   width: 30%;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #ddd;
   border-radius: 8px;
   text-align: center;
@@ -127,13 +128,13 @@ const projects = ref([
 }
 
 .projects h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 2.5rem;
-  color: antiquewhite;
+  font-size: 4.5rem;
+  color: #A43820;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 20px;
   padding-top: 10px;
+
 }
 
 </style>
