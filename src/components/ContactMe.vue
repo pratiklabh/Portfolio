@@ -20,15 +20,23 @@
       </div>
       <button type="submit">Send Message</button>
     </form>
-
+    <p>Phone: +977-9762260301</p>
     <p>Email: pratiklabh10@gmail.com</p>
-    <p> Phone: +977-9762260301</p>
-    <p> Address: Sahayoginager, Koteshwor-32, Kathmandu</p>
+    <p>Address: Sahayoginagar, Koteshwor-32, Kathmandu</p>
+
+    <div class="social-links">
+      <a href="https://github.com/pratiklabh" target="_blank" rel="noopener noreferrer">
+        <img src="@/assets/socials/github.svg" alt="GitHub"/>
+      </a>
+      <a href="https://linkedin.com/in/pratiklabh" target="_blank" rel="noopener noreferrer">
+        <img src="@/assets/socials/linkedin.svg" alt="LinkedIn"/>
+      </a>
+    </div>
   </div>
 </template>
 
 <script setup>
-import {ref} from 'vue';
+import { ref } from 'vue';
 
 const form = ref({
   name: '',
@@ -47,11 +55,11 @@ function handleSubmit() {
 
 <style scoped>
 .contact-me {
+  height: 100vh;
   font-family: 'Playfair Display', serif;
-  background-color: #90aead;
+  background-color: #123c69;
   color: white;
-  margin-bottom: 2.5rem;
-  padding: 5rem;
+  padding: 2rem;
   text-align: center;
 }
 
@@ -72,11 +80,16 @@ function handleSubmit() {
 }
 
 .contact-form {
+  background: #29648a;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  font-size: 2rem;
+  max-width: 40rem;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .form-group {
@@ -107,12 +120,26 @@ button {
   border-radius: 0.25rem;
   cursor: pointer;
 }
-.contact-me p{
+
+.contact-me p {
   padding-top: 1rem;
   font-size: 2rem;
-
 }
+
 button:hover {
   background-color: #34495e;
+}
+
+.social-links {
+  margin-top: 2rem;
+}
+
+.social-links a {
+  margin: 0 1rem;
+}
+
+.social-links img {
+  width: 3rem;
+  height: 3rem;
 }
 </style>

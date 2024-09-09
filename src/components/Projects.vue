@@ -80,6 +80,7 @@ const projects = ref([
 
 <style scoped>
 .projects {
+  height: 100vh;
   padding-top: 5rem;
   background-color: #8697C4;
   text-align: center;

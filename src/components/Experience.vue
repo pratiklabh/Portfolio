@@ -8,17 +8,14 @@
           <img :src="getImage(exp.image)" alt="Experience Image" class="experience-img"/>
         </template>
 
-        <!-- Title (Job Title) -->
         <template #title>
           <h3 class="experience-title">{{ exp.title }}</h3>
         </template>
 
-        <!-- Subtitle (Company Name) -->
         <template #subtitle>
           <h4 class="experience-subtitle">{{ exp.company }}</h4>
         </template>
 
-        <!-- Content (Duration and Description) -->
         <template #content>
           <p class="duration">{{ exp.duration }}</p>
           <p class="description">{{ exp.description }}</p>
@@ -57,14 +54,15 @@ const experiences = ref([
 
 <style scoped>
 .experience {
+  height: 100vh;
   background-color: #8697C4;
   text-align: center;
-  padding-top: 4rem;
+  padding-top: 5rem;
   padding-bottom: 3rem;
 }
 
 .experience-grid {
-  padding-top: 1.5rem;
+  padding-top: 6rem;
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
@@ -118,7 +116,7 @@ const experiences = ref([
 
 h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 4.5rem;
+  font-size: 6rem;
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.1rem;

@@ -13,7 +13,9 @@
         I am looking forward to expanding my knowledge and gaining practical experience in
         developing applications in Java and other technologies to create innovative solutions that make a difference.
       </p>
+
     </div>
+
     <img class="profile-pic" src="@/assets/images/me.webp" alt="Profile Picture" />
   </div>
 </template>
@@ -24,6 +26,7 @@
 
 <style scoped>
 .about-me {
+  height: 100vh;
   width: 100%;
   background-color: #66A5AD;
   padding-top: 5rem;
