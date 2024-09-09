@@ -80,42 +80,37 @@ const projects = ref([
 
 <style scoped>
 .projects {
-  background-color: #330000;
-  margin-bottom: 40px;
-  margin-top: 50px;
+  padding-top: 5rem;
+  background-color: #8697C4;
   text-align: center;
   font-family: 'Playfair Display', serif;
-  padding-bottom: 30px;
-  border-radius: 20px;
-  padding-top: 10px;
 }
 
 .projects-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 20px;
 }
 
 .project-card {
   width: 30%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem;
+  border-radius: 0.5rem;
   text-align: center;
   background-color: #f4f4f9;
   transition: transform 0.3s ease-in-out;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-0.5rem);
 }
 
 .project-card img {
-  width: 150px;
-  height: 150px;
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
-  padding: 10px;
+  padding: 0.5rem;
   object-fit: cover;
   margin: 0 auto;
   display: block;
@@ -123,17 +118,18 @@ const projects = ref([
 
 .project-card a {
   color: #007bff;
+  padding-top: 0.4rem;
   text-decoration: none;
   font-weight: bold;
 }
 
 .projects h2 {
   font-size: 4.5rem;
-  color: #A43820;
+  color: white;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-  padding-top: 10px;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.25rem;
+  padding-top: 0.6rem;
 
 }
 

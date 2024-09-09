@@ -57,19 +57,17 @@ const experiences = ref([
 
 <style scoped>
 .experience {
-  background-color: teal;
-  margin-bottom: 40px;
-  padding-bottom: 20px;
-  padding-left: 15px;
-  border-radius: 20px;
+  background-color: #8697C4;
   text-align: center;
-  padding-top: 1px;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
 }
 
 .experience-grid {
+  padding-top: 1.5rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 1.5rem;
   justify-content: center;
 }
 
@@ -78,53 +76,53 @@ const experiences = ref([
   align-items: center;
   background-color: #f4f4f9;
   border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  width: 47%;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 45%;
   transition: transform 0.3s ease-in-out;
 }
 
 .experience-item:hover {
-  transform: translateY(-5px);
+  transform: translateY(-0.25rem);
 }
 
 .experience-img {
-  width: 100px;
-  height: 100px;
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
   object-fit: cover;
 }
 
 .experience-title {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin: 0;
 }
 
 .experience-subtitle {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin: 0;
 }
 
 .duration {
   color: #666;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .description {
-  font-size: 16px;
+  font-size: 1.25rem;
   line-height: 1.6;
 }
 
 h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 2.5rem;
-  color: antiquewhite;
+  font-family: 'Playfair Display', serif;
+  font-size: 4.5rem;
+  color: white;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-  padding-top: 10px;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.25rem;
+  padding-top: 0.75rem;
 }
 </style>

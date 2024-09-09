@@ -1,13 +1,20 @@
 <template>
 
   <div class="about-me">
-    <img class="profile-pic" src="@/assets/images/me.webp" alt="Profile Picture" />
+
     <div class="about-text">
       <h1>Pratik Kumar Labh</h1>
-      <p>A passionate Computer Engineer and Java enthusiast dedicated to continuous learning and exploring new technologies.
-        I enjoy tackling complex problems and developing innovative solutions, staying up-to-date with the latest advancements in the tech field.
+      <p>
+        I am a passionate Computer Engineer and a Java enthusiast, eager to continually learn and grow in the field of software development.
+        My journey with programming started with Java, and I have been exploring its powerful capabilities for building robust applications.
+        Although I am at the beginning of my career, I am driven by a curiosity to tackle new challenges and improve my coding skills every day.
+        I enjoy breaking down complex problems into simpler tasks and applying creative solutions to solve them.
+        I make it a priority to stay up-to-date with the latest advancements in the tech world, especially in Java and its related technologies, so I can build better applications.
+        I am looking forward to expanding my knowledge and gaining practical experience in
+        developing applications in Java and other technologies to create innovative solutions that make a difference.
       </p>
     </div>
+    <img class="profile-pic" src="@/assets/images/me.webp" alt="Profile Picture" />
   </div>
 </template>
 
@@ -17,30 +24,25 @@
 
 <style scoped>
 .about-me {
-  margin-top: 75px;
-  background-color: #330000;
-  border-radius: 20px;
-  padding: 20px;
+  width: 100%;
+  background-color: #66A5AD;
+  padding-top: 5rem;
+  padding-left: 2rem;
   display: flex;
   align-items: center;
-  transition: transform 0.3s ease-in-out;
-}
-
-.about-me:hover {
-  transform: translateY(-5px);
 }
 
 .profile-pic {
-  width: 350px;
-  height: 350px;
+  width: 21rem;
+  height: 21rem;
   border-radius: 50%;
-  margin-right: 30px;
-  border: 4px solid #fff;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 .about-text {
+  text-align: left;
   font-family: 'Playfair Display', serif;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,14 +53,14 @@ h1 {
   letter-spacing: 2px;
 
   margin: 0;
-  color: #A43820;
+  color:white;
 }
 
 p {
   font-size: 1.5rem;
-  margin-top: 10px;
+  margin-top: 1rem;
   line-height: 1.6;
-  color: #D09683;
+  color: white;
 
 }
 </style>
