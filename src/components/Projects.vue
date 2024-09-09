@@ -2,18 +2,35 @@
   <div class="projects">
     <h2>Personal Projects</h2>
     <div class="projects-grid">
-      <div v-for="project in projects" :key="project.name" class="project-card">
-        <img :src="getImage(project.image)" alt="Project Image" />
-        <h3>{{ project.name }}</h3>
-        <p>{{ project.description }}</p>
-        <a :href="project.link" target="_blank">View on GitHub</a>
-      </div>
+      <Card v-for="project in projects" :key="project.name" class="project-card">
+        <template #header>
+          <img :src="getImage(project.image)" alt="Project Image"/>
+        </template>
+        <template #title>
+          <h3>{{ project.name }}</h3>
+        </template>
+        <template #content>
+          <p>{{ project.description }}</p>
+        </template>
+        <template #footer>
+          <Button
+              as="a"
+              label="View Project"
+              :href="project.link"
+              target="_blank"
+              rel="noopener"
+              class="p-button p-component p-button-outlined"
+          />
+        </template>
+      </Card>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import {ref} from 'vue';
+import Card from 'primevue/card';
+import Button from 'primevue/button';
 
 // Function to return image path
 const getImage = (imageName) => {
@@ -65,10 +82,11 @@ const projects = ref([
 .projects {
   background-color: teal;
   margin-bottom: 40px;
+  margin-top: 75px;
   text-align: center;
   padding-bottom: 30px;
   border-radius: 20px;
-  padding-top: 0.01px;
+  padding-top: 10px;
 }
 
 .projects-grid {
@@ -93,9 +111,9 @@ const projects = ref([
 }
 
 .project-card img {
-  max-width: 150px;
-  max-height: 150px;
-  border-radius: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   padding: 10px;
   object-fit: cover;
   margin: 0 auto;
@@ -107,6 +125,7 @@ const projects = ref([
   text-decoration: none;
   font-weight: bold;
 }
+
 .projects h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
