@@ -2,21 +2,35 @@
   <section class="experience">
     <h2>My Experience</h2>
     <div class="experience-grid">
-      <div v-for="exp in experiences" :key="exp.title" class="experience-item">
-        <img :src="getImage(exp.image)" alt="Experience Image" class="experience-img" />
-        <div class="experience-info">
-          <h3>{{ exp.title }}</h3>
-          <p class="company">{{ exp.company }}</p>
+      <Card v-for="exp in experiences" :key="exp.title" class="experience-item">
+        <!-- Header (Experience Image) -->
+        <template #header>
+          <img :src="getImage(exp.image)" alt="Experience Image" class="experience-img"/>
+        </template>
+
+        <!-- Title (Job Title) -->
+        <template #title>
+          <h3 class="experience-title">{{ exp.title }}</h3>
+        </template>
+
+        <!-- Subtitle (Company Name) -->
+        <template #subtitle>
+          <h4 class="experience-subtitle">{{ exp.company }}</h4>
+        </template>
+
+        <!-- Content (Duration and Description) -->
+        <template #content>
           <p class="duration">{{ exp.duration }}</p>
           <p class="description">{{ exp.description }}</p>
-        </div>
-      </div>
+        </template>
+      </Card>
     </div>
   </section>
 </template>
 
 <script setup>
 import { ref } from 'vue';
+import Card from 'primevue/card';
 
 // Function to return image path
 const getImage = (imageName) => {
@@ -39,12 +53,11 @@ const experiences = ref([
     image: 'broadway.png'
   }
 ]);
-
 </script>
 
 <style scoped>
 .experience {
-  background-color:  teal;
+  background-color: teal;
   margin-bottom: 40px;
   padding-bottom: 20px;
   padding-left: 15px;
@@ -57,6 +70,7 @@ const experiences = ref([
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
 .experience-item {
@@ -67,7 +81,7 @@ const experiences = ref([
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 15px;
-  width: calc(50% - 20px);
+  width: 47%;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -78,25 +92,20 @@ const experiences = ref([
 .experience-img {
   width: 100px;
   height: 100px;
-  border-radius: 8px;
-  margin-right: 20px;
+  border-radius: 50%;
   object-fit: cover;
 }
 
-.experience-info {
-  max-width: 600px;
-  text-align: left;
-}
-
-.experience-info h3 {
-  margin-top: 0;
-  font-size: 22px;
-
-}
-
-.company {
+.experience-title {
+  font-size: 1.5rem;
   font-weight: bold;
-  margin: 5px 0;
+  margin: 0;
+}
+
+.experience-subtitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
 }
 
 .duration {

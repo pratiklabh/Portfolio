@@ -18,7 +18,7 @@
 <style scoped>
 .about-me {
   margin-top: 75px;
-  background-color: #0FA4AF;
+  background-color: teal;
   border-radius: 20px;
   padding: 20px;
   display: flex;
@@ -45,10 +45,9 @@
 }
 
 h1 {
-  font-family: ;
   font-size: 2.5rem;
   margin: 0;
-  color: #964734;
+  color: antiquewhite;
 }
 
 p {
