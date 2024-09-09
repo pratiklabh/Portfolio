@@ -2,27 +2,20 @@
   <div id="app">
     <nav>
       <ul>
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact-me">Contact Me</a></li>
+        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/about-me">About Me</router-link></li>
+        <li><router-link to="/projects">Projects</router-link></li>
+        <li><router-link to="/skills">Skills</router-link></li>
+        <li><router-link to="/experience">Experience</router-link></li>
+        <li><router-link to="/contact-me">Contact Me</router-link></li>
       </ul>
     </nav>
-    <AboutMe id="about-me" />
-    <Projects id="projects" />
-    <Skills id="skills" />
-    <Experience id="experience" />
-    <ContactMe id="contact-me" />
+    <router-view />
   </div>
 </template>
 
 <script setup>
-import AboutMe from './components/AboutMe.vue';
-import Projects from './components/Projects.vue';
-import Skills from './components/Skills.vue';
-import Experience from './components/Experience.vue';
-import ContactMe from './components/ContactMe.vue';
+
 </script>
 
 <style>
@@ -62,12 +55,5 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
-}
-
-section {
-  padding: 80px 20px; /* Extra top padding to account for fixed nav */
-  margin: 20px 0;
-  border: 1px solid #ddd;
-  border-radius: 8px;
 }
 </style>

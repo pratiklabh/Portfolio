@@ -3,17 +3,16 @@
   <div class="about-me">
     <img class="profile-pic" src="@/assets/images/me.webp" alt="Profile Picture" />
     <div class="about-text">
-      <h1>{{ name }}</h1>
-      <p>{{ description }}</p>
+      <h1>Pratik Kumar Labh</h1>
+      <p>A passionate Computer Engineer and Java enthusiast dedicated to continuous learning and exploring new technologies.
+        I enjoy tackling complex problems and developing innovative solutions, staying up-to-date with the latest advancements in the tech field.
+      </p>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
 
-const name = ref('Pratik Kumar Labh');
-const description = ref('A passionate Computer Engineer and Java enthusiast dedicated to continuous learning and exploring new technologies. I enjoy tackling complex problems and developing innovative solutions, staying up-to-date with the latest advancements in the tech field.');
 </script>
 
 <style scoped>
