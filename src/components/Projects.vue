@@ -1,0 +1,120 @@
+<template>
+  <div class="projects">
+    <h2>Personal Projects</h2>
+    <div class="projects-grid">
+      <div v-for="project in projects" :key="project.name" class="project-card">
+        <img :src="getImage(project.image)" alt="Project Image" />
+        <h3>{{ project.name }}</h3>
+        <p>{{ project.description }}</p>
+        <a :href="project.link" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup>
+import { ref } from 'vue';
+
+// Function to return image path
+const getImage = (imageName) => {
+  return new URL(`../assets/images/${imageName}`, import.meta.url).href;
+};
+
+const projects = ref([
+  {
+    name: 'Supermarket Billing System',
+    description: 'A system for managing supermarket transactions, inventory, and billing processes.',
+    image: 'supermarket.webp',
+    link: 'https://github.com/pratiklabh/SupermarketBillingSystem'
+  },
+  {
+    name: 'Hospital Management System',
+    description: 'A comprehensive system for managing hospital operations, including patient records, appointments, and staff management.',
+    image: 'hospital.webp',
+    link: 'https://github.com/pratiklabh/HospitalManagementSystem'
+  },
+  {
+    name: 'Banking Application',
+    description: 'A banking application for managing customer accounts, transactions, and other banking operations.',
+    image: 'bank.jpg',
+    link: 'https://github.com/pratiklabh/BankingApplication'
+  },
+  {
+    name: 'Library Management System',
+    description: 'A system for managing library operations, including book cataloging, borrowing, and returns.',
+    image: 'library.jpg',
+    link: 'https://github.com/pratiklabh/LibraryManagementSystem'
+  },
+  {
+    name: 'Employee Management System',
+    description: 'An application for managing employee details, including personal information, job roles, and attendance.',
+    image: 'employee.jpg',
+    link: 'https://github.com/pratiklabh/EmployeeManagementSystem'
+  },
+  {
+    name: 'Number Guessing Game',
+    description: 'A simple number guessing game implemented as part of a task.',
+    image: 'numguess.png',
+    link: 'https://github.com/pratiklabh/oibsip_task2'
+  }
+]);
+
+</script>
+
+<style scoped>
+.projects {
+  background-color: teal;
+  margin-bottom: 40px;
+  text-align: center;
+  padding-bottom: 30px;
+  border-radius: 20px;
+  padding-top: 0.01px;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.project-card {
+  width: 30%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #f4f4f9;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 20px;
+  padding: 10px;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+}
+
+.project-card a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.projects h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  color: antiquewhite;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+</style>
