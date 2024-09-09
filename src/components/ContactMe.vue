@@ -50,6 +50,8 @@ function handleSubmit() {
   console.log('Sender Email: ', form.value.email);
   console.log('Subject: ', form.value.subject);
   console.log('Message: ', form.value.message);
+  alert(`Thank you, ${form.value.name}! Your message has been sent.`)
+
 }
 </script>
 
