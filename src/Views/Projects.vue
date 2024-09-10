@@ -2,20 +2,23 @@
   <div class="projects">
     <h2>Personal Projects</h2>
     <div class="projects-grid">
-      <Card v-for="project in projects" :key="project.name" class="project-card">
+      <Card
+          v-for="project in projects"
+          :key="project.name"
+          class="project-card"
+          @click="openModal(project)"
+      >
         <template #header>
-          <img :src="getImage(project.image)" alt="Project Image"/>
+          <img :src="getImage(project.image)" alt="Project Image" />
         </template>
         <template #title>
           <h3>{{ project.name }}</h3>
         </template>
-        <template #content>
-          <p>{{ project.description }}</p>
-        </template>
+
         <template #footer>
           <Button
               as="a"
-              label="View Project"
+              label="View on GitHub"
               :href="project.link"
               target="_blank"
               rel="noopener"
@@ -24,18 +27,18 @@
         </template>
       </Card>
     </div>
+
+    <!-- Project Details Modal -->
+    <Modal v-if="selectedProject" :project="selectedProject" @close="closeModal" />
   </div>
 </template>
+
 
 <script setup>
 import {ref} from 'vue';
 import Card from 'primevue/card';
 import Button from 'primevue/button';
-
-// Function to return image path
-const getImage = (imageName) => {
-  return new URL(`../assets/images/${imageName}`, import.meta.url).href;
-};
+import Modal from './Modal.vue';
 
 const projects = ref([
   {
@@ -76,6 +79,21 @@ const projects = ref([
   }
 ]);
 
+// Manage modal state
+const selectedProject = ref(null);
+
+const openModal = (project) => {
+  selectedProject.value = project;
+};
+
+const closeModal = () => {
+  selectedProject.value = null;
+};
+
+// Function to return image path
+const getImage = (imageName) => {
+  return new URL(`../assets/images/${imageName}`, import.meta.url).href;
+};
 </script>
 
 <style scoped>
