@@ -34,17 +34,18 @@ const skills = ref([
 <style scoped>
 .skills {
   height: 100vh;
-  padding-top: 5rem;
+  padding-top: 6rem;
   padding-bottom: 3rem;
   font-family: 'Playfair Display', serif;
   font-size: 4.5rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   background-color: #869aaf;
+  text-align: center;
 }
 
 .skills-list {
-  padding-top: 6rem;
+  padding-top: 5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -79,9 +80,85 @@ const skills = ref([
   font-size: 1rem;
 }
 
-
 .skill-icon {
   width: 3rem;
   height: 3rem;
+}
+.skills h2 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .skills-list {
+    gap: 4rem;
+  }
+
+  .skill-item {
+    padding: 0.8rem 1rem;
+  }
+
+  .skill-item img {
+    height: 8rem;
+    width: 8rem;
+  }
+
+  .skill-item p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills {
+    font-size: 3rem;
+  }
+
+  .skills-list {
+    gap: 3rem;
+  }
+
+  .skill-item {
+    padding: 0.7rem 0.9rem;
+  }
+
+  .skill-item img {
+    height: 7rem;
+    width: 7rem;
+  }
+
+  .skill-item p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .skills {
+    font-size: 2.5rem;
+    padding: 2rem 1rem;
+  }
+
+  .skills-list {
+    padding-top: 3rem;
+    gap: 2rem;
+  }
+
+  .skill-item {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .skill-item img {
+    height: 5rem;
+    width: 5rem;
+  }
+  .skills h2 {
+    padding-top: 4rem  ;
+    font-size: 2rem;
+  }
+  .skill-item p {
+    font-size: 0.75rem;
+  }
 }
 </style>
