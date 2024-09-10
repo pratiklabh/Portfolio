@@ -16,7 +16,7 @@
 
     </div>
 
-    <img class="profile-pic" src="@/assets/images/me.webp" alt="Profile Picture" />
+    <img class="profile-pic" src="../assets/images/me.webp" alt="Profile Picture" />
   </div>
 </template>
 

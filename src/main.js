@@ -2,7 +2,7 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import PrimeVue from 'primevue/config';
 
-import Router from "./router";
+import Router from "./Router/router.js";
 
 const app = createApp(App);
 

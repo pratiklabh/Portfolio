@@ -26,10 +26,10 @@
 
     <div class="social-links">
       <a href="https://github.com/pratiklabh" target="_blank" rel="noopener noreferrer">
-        <img src="@/assets/socials/github.svg" alt="GitHub"/>
+        <img src="../assets/socials/github.svg" alt="GitHub"/>
       </a>
       <a href="https://linkedin.com/in/pratiklabh" target="_blank" rel="noopener noreferrer">
-        <img src="@/assets/socials/linkedin.svg" alt="LinkedIn"/>
+        <img src="../assets/socials/linkedin.svg" alt="LinkedIn"/>
       </a>
     </div>
   </div>
