@@ -1,10 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import AboutMe from '../Views/AboutMe.vue';
-import Projects from '../Views/Projects.vue';
-import Skills from '../Views/Skills.vue';
-import Experience from '../Views/Experience.vue';
-import ContactMe from '../Views/ContactMe.vue';
-import Home from '../Views/Home.vue';
+
+const Home = () => import('../Views/Home.vue');
+const AboutMe = () => import('../Views/AboutMe.vue');
+const Projects = () => import('../Views/Projects.vue');
+const Skills = () => import('../Views/Skills.vue');
+const Experience = () => import('../Views/Experience.vue');
+const ContactMe = () => import('../Views/ContactMe.vue');
 
 const routes = [
     { path: '/', component: Home },
