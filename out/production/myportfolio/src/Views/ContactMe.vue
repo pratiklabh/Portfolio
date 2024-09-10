@@ -57,7 +57,7 @@ function handleSubmit() {
 <style scoped>
 .contact-me {
   font-family: 'Playfair Display', serif;
-  background-color: #869aaf;
+  background-color: #8697C4;
   color: white;
   padding: 2rem;
   text-align: center;

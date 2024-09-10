@@ -20,15 +20,8 @@
 </script>
 
 <style scoped>
-/* Ensure the html and body take up the full height */
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
 .about-me {
   width: 100%;
-  min-height: 100vh; /* Ensures the container takes up the full viewport height */
   padding: 5rem;
   background-color: #869aaf;
   display: flex;
@@ -58,7 +51,7 @@ html, body {
 }
 
 /* Responsive Styles */
-/* Targets devices like tablets or small laptops. */
+/*Targets devices like tablets or small laptops.*/
 @media (min-width: 768px) {
   .about-me {
     padding: 5rem;
@@ -79,8 +72,7 @@ html, body {
     max-width: 600px;
   }
 }
-
-/* Targets larger screens like desktops. */
+/*Targets larger screens like desktops.*/
 @media (min-width: 1024px) {
   .profile-pic {
     width: 21rem;

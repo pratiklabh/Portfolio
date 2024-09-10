@@ -1,6 +1,6 @@
 <template>
   <section class="experience">
-    <h2>My Experience And Training</h2>
+    <h2>My Experience</h2>
     <div class="experience-grid">
       <Card v-for="exp in experiences" :key="exp.title" class="experience-item">
         <!-- Header (Experience Image) -->
@@ -51,16 +51,9 @@ const experiences = ref([
   }
 ]);
 </script>
-
 <style scoped>
-/* Ensure the html and body take up the full height */
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
 .experience {
-  min-height: 100vh; /* Ensures the container takes up the full viewport height */
+  height: auto;
   background-color: #8697C4;
   text-align: center;
   padding: 3rem 1rem;
@@ -121,7 +114,8 @@ html, body {
 
 h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 4rem;
+  font-size: 3rem;
+  color: white;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   margin-bottom: 2rem;
