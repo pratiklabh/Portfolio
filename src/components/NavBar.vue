@@ -1,58 +1,36 @@
 <template>
-  <div id="app">
-    <nav>
-      <ul>
-        <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/about-me">About Me</router-link></li>
-        <li><router-link to="/projects">Projects</router-link></li>
-        <li><router-link to="/skills">Skills</router-link></li>
-        <li><router-link to="/experience">Experience</router-link></li>
-        <li><router-link to="/contact-me">Contact Me</router-link></li>
-      </ul>
-    </nav>
-  </div>
+  <Menubar :model="items" class="menubar"></Menubar>
 </template>
 
 <script setup>
+import { useRouter } from 'vue-router';
+import 'primeicons/primeicons.css';
 
+const router = useRouter();
+
+// Define navigation items with icons
+const items = [
+  { label: 'Home', icon: 'pi pi-fw pi-home', command: () => router.push('/') },
+  { label: 'About', icon: 'pi pi-fw pi-info-circle', command: () => router.push('/about-me') },
+  { label: 'Projects', icon: 'pi pi-fw pi-folder', command: () => router.push('/projects') },
+  { label: 'Skills', icon: 'pi pi-fw pi-star', command: () => router.push('/skills') },
+  { label: 'Experience', icon: 'pi pi-fw pi-briefcase', command: () => router.push('/experience') },
+  { label: 'Contact Me', icon: 'pi pi-fw pi-phone', command: () => router.push('/contact-me') }
+];
 </script>
 
-<style>
-#app {
-  font-family: 'Playfair Display', serif;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-
-}
-
-nav {
-  background-color: #002C54;
-  color: white;
-  padding: 10px 20px;
+<style scoped>
+.menubar {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  height: 60px;
+  z-index: 1000; /* Ensures the menubar stays on top */
+  font-size: 1rem;
+  background-color: #000000;
+  padding: 0.5rem 1rem;
 }
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-nav a {
-  color: #f0f0f0;
-  font-size: 1.5rem;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
+.p-menubar {
+  border: none; /* Remove border if unwanted */
 }
 </style>
