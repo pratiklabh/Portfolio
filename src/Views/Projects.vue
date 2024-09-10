@@ -80,7 +80,6 @@ const projects = ref([
 
 <style scoped>
 .projects {
-  height: 100vh;
   padding-top: 5rem;
   background-color: #8697C4;
   text-align: center;
@@ -94,13 +93,14 @@ const projects = ref([
 }
 
 .project-card {
-  width: 30%;
+  flex: 1 1 100%;
+  max-width: 90%;
   padding: 1.5rem;
-  margin: 1.5rem;
+  margin: 1.5rem 0;
   border-radius: 0.5rem;
-  text-align: center;
   background-color: #f4f4f9;
   transition: transform 0.3s ease-in-out;
+  text-align: center;
 }
 
 .project-card:hover {
@@ -125,13 +125,52 @@ const projects = ref([
 }
 
 .projects h2 {
-  font-size: 4.5rem;
+  font-size: 2.5rem;
   color: white;
   text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  margin-bottom: 1.25rem;
-  padding-top: 0.6rem;
-
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.5rem;
 }
 
+/* Responsive Styles for h2 */
+@media (min-width: 576px) {
+  .project-card {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+  .projects h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .project-card {
+    flex: 1 1 30%;
+    max-width: 30%;
+  }
+
+  .project-card img {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .projects h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects {
+    padding: 5rem 2rem;
+  }
+
+  .projects h2 {
+    font-size: 4rem;
+  }
+
+  .project-card img {
+    width: 12rem;
+    height: 12rem;
+  }
+}
 </style>

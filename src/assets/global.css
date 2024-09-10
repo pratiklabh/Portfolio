@@ -1,0 +1,24 @@
+/* General Settings */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 4.5rem;
+    letter-spacing: 2px;
+    margin: 0;
+}
+h3 {
+    font-size: 2rem;
+
+}
+p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    line-height: 1.6;
+    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+}
