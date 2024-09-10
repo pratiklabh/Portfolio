@@ -126,7 +126,6 @@ const projects = ref([
 
 .projects h2 {
   font-size: 2.5rem;
-  color: white;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   margin-bottom: 1.5rem;

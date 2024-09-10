@@ -19,14 +19,14 @@ const getImage = (imageName) => {
 };
 
 const skills = ref([
-  {name: 'Java', icon: 'java.png'},
-  {name: 'C', icon: 'c.png'},
-  {name: 'C++', icon: 'cpp.png'},
-  {name: 'HTML', icon: 'html.png'},
+  {name: 'Java', icon: 'java.jpg'},
+  {name: 'C', icon: 'c.jpg'},
+  {name: 'C++', icon: 'cpp.webp'},
+  {name: 'HTML', icon: 'html.jpg'},
   {name: 'CSS', icon: 'css.png'},
   {name: 'Spring Boot', icon: 'springboot.png'},
-  {name: 'MySQL', icon: 'mysql.png'},
-  {name: 'Git', icon: 'github.png'},
+  {name: 'MySQL', icon: 'dbms.jpg'},
+  {name: 'Git', icon: 'github.webp'},
   {name: 'RestApi', icon: 'restapi.png'},
 ]);
 </script>
@@ -38,10 +38,9 @@ const skills = ref([
   padding-bottom: 3rem;
   font-family: 'Playfair Display', serif;
   font-size: 4.5rem;
-  color: white;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  background: darkslateblue;
+  background-color: #869aaf;
 }
 
 .skills-list {
@@ -59,9 +58,8 @@ const skills = ref([
   flex-direction: column;
   align-items: center;
   padding: 1rem 1.25rem;
-  background-color: #f4f4f9;
-  border: 1px solid #ddd;
-  border-radius: 0.5rem;
+  background-color: #dddeee;
+  border-radius: 3rem;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -73,6 +71,7 @@ const skills = ref([
 .skill-item img {
   height: 10rem;
   width: 10rem;
+  border-radius: 50%;
 }
 
 .skill-item p {
