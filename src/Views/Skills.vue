@@ -33,9 +33,8 @@ const skills = ref([
 
 <style scoped>
 .skills {
-  height: 100vh;
   padding-top: 6rem;
-  padding-bottom: 3rem;
+  padding-bottom: 6rem;
   font-family: 'Playfair Display', serif;
   font-size: 4.5rem;
   text-transform: uppercase;

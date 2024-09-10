@@ -20,8 +20,8 @@
 <style>
 #app {
   font-family: 'Playfair Display', serif;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   text-align: center;
 
 }
@@ -30,7 +30,6 @@ nav {
   background-color: #002C54;
   color: white;
   padding: 10px 20px;
-  position: fixed;
   width: 100%;
   display: flex;
   justify-content: center;
