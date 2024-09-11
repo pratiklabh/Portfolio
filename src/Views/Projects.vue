@@ -119,6 +119,7 @@ const getImage = (imageName) => {
   background-color: #f4f4f9;
   transition: transform 0.3s ease-in-out;
   text-align: center;
+  cursor: pointer;
 }
 
 .project-card:hover {
