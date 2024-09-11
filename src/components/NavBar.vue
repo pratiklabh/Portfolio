@@ -11,7 +11,7 @@ const router = useRouter();
 // Define navigation items with icons
 const items = [
   { label: 'Home', icon: 'pi pi-fw pi-home', command: () => router.push('/') },
-  { label: 'About', icon: 'pi pi-fw pi-info-circle', command: () => router.push('/about-me') },
+  { label: 'About Me', icon: 'pi pi-fw pi-info-circle', command: () => router.push('/about-me') },
   { label: 'Projects', icon: 'pi pi-fw pi-folder', command: () => router.push('/projects') },
   { label: 'Skills', icon: 'pi pi-fw pi-star', command: () => router.push('/skills') },
   { label: 'Experience', icon: 'pi pi-fw pi-briefcase', command: () => router.push('/experience') },

@@ -20,7 +20,7 @@
       </div>
       <button type="submit">Send Message</button>
     </form>
-    <p>Phone: +977-9762260301</p>
+    <p>Phone: +977-9863687061</p>
     <p>Email: pratiklabh10@gmail.com</p>
     <p>Address: Sahayoginagar, Koteshwor-32, Kathmandu</p>
 
@@ -123,7 +123,8 @@ button {
 
 .contact-me p {
   padding-top: 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  margin: 0 auto;
 }
 
 button:hover {
